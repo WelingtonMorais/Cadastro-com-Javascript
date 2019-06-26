@@ -1,53 +1,92 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-<script src="banco.js"></script>
-<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <meta charset="utf-8">
+    <title>Prepara Exercicios</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="banco.js"></script>
 </head>
 <body>
-		<div class='container'>
-			<p class='h1'>Cadastro Pessoa</p>
-			<small class='text-muted'>OBS: Para deletar digite o nome da pessoa e clique em deletar.</small>
-            <form class="form-inline"><br><br>
-                <input  type="hidden" id="id" value="" />
-                <div class="">
-                    <label class="form-check-label" for="nome">Nome:</label>
-                    <input class='form-control' type="text" id="nome" placeholder='Nome'/>
-					<br>
-                </div>
+	<div class='container'>
+        <div class="clearfix">
+            <div class="col-md-4">
+                <!-- 1 of 3 -->
+            </div>
+            <div class="col-md-4">
+		      <p class='h1'>Cadastro Pessoa</p>
+		      <small class='text-muted'>OBS: Para deletar digite o nome da pessoa e clique em deletar.</small>
+                <form class="form-group">
+                    <input  type="hidden" id="id" value="" />
+                        
+                        <div class="form-group">
+                            <label class="form-check-label" for="nome">Nome:</label>
+                            <input class='form-control' type="text" id="nome" placeholder='Nome'/>
+                        </div>
 
-                <div class="">
-                    <label for="idade" class="form-check-label">Idade:</label>
-                    <input class='form-control' type="text" id="idade" placeholder='Idade'/>
-					<br>
-                </div>
+                        <div class="form-group">
+                            <label for="idade" class="form-check-label">Idade:</label>
+                            <input class='form-control' type="text" id="idade" placeholder='Idade'/>
+        					
+                        </div>
 				
-				<div class="">
-                    <label for="sexo" class="form-check-label">Sexo:</label>
-                    <input class='form-control' type="text" id="sexo" placeholder='Sexo'/>
-					<br>
-                </div>
-            
-			</form>
-			<br>
-			<button class="btn btn-primary" id="btn-salvar">SALVAR</button>
-				
-            <button class="btn btn-primary" onclick="deletar()" >DELETAR</button>
-			<br><br>
-            
-			<table id="tabela" class="table">
-                <thead class='thead-dark'>
-                    <th scope='col'>Nome</th>
-                    <th scope='col'>Idade</th>
-					<th scope='col'>Sexo</th>
-                </thead>
-                <tbody id="tb_registro">
+        				<div class="form-group">
+                            <label for="sexo" class="form-check-label">Sexo:</label>
+                            <input class='form-control' type="text" id="sexo" placeholder='Sexo'/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="estado" class="form-check-label">Estado:</label>
+                            <input class='form-control' type="text" id="estado" placeholder='Estado'/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cidade" class="form-check-label">Cidade:</label>
+                            <input class='form-control' type="text" id="cidade" placeholder='Cidade'/>
+                        </div>
+
+                    <br><br>
+		        </form>
+			     <br>
+        			<button class="btn btn-primary" id="btn-salvar">SALVAR</button>
+        				
+                    <button class="btn btn-primary" onclick="deletar()" >DELETAR</button>
+			     <br><br>
                 
-                </tbody>
-            </table>
-		</div>
-	
+            </div>
+                <div class="col-md-4">
+                <!-- 1 of 3 -->
+                </div>
+            
+        			<table id="tabela" class="table">
+                        <thead class='thead-dark'>
+                            <th scope='col'>Nome</th>
+                            <th scope='col'>Idade</th>
+        					<th scope='col'>Sexo</th>
+                            <th scope='col'>Estado</th>
+                            <th scope='col'>Cidade</th>
+                        </thead>
+                        <tbody id="tb_registro">
+                        
+                        </tbody>
+                    </table>
 
+                <hr>
+                <footer id="rodape" style="background-color: #e5e5e5;">
+                <br>
+                <p class="text-center"><b> © 2018 Welington Morais All Rights Reserved</b></p>
+                
+                <h6 class="text-center">Declaração</h6>
+                <p class="text-justify">A informação publicada neste projeto NÃO necessariamente refletem a opinião de qualquer pessoa que não seja o autor. Clientes ou empregadores do autor não tem parte na autoria ou co-autoria de artigos. Todo código ou exemplo de dados mostrado é criado especificamente para estudo, e jamais será cópia ou oriundo de dados reais de produção.</p>
+
+                <h6 class="text-center">Disclaimer</h6>
+                <p class="text-justify">The information published in this project does NOT necessarily reflect the opinion of anyone other than the author. Clients or employers of the author has no part in authoring or co-authoring of articles. Any code or sample data shown is created specifically for study, and will never be copied or derived from actual production data.</p>
+                </footer>
+                </hr>
+
+
+           
+        </div>
+    </div>
+   
 </body>
 </html>
