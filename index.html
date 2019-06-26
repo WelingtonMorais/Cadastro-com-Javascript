@@ -1,0 +1,53 @@
+<html>
+
+<head>
+<script src="banco.js"></script>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+		<div class='container'>
+			<p class='h1'>Cadastro Pessoa</p>
+			<small class='text-muted'>OBS: Para deletar digite o nome da pessoa e clique em deletar.</small>
+            <form class="form-inline"><br><br>
+                <input  type="hidden" id="id" value="" />
+                <div class="">
+                    <label class="form-check-label" for="nome">Nome:</label>
+                    <input class='form-control' type="text" id="nome" placeholder='Nome'/>
+					<br>
+                </div>
+
+                <div class="">
+                    <label for="idade" class="form-check-label">Idade:</label>
+                    <input class='form-control' type="text" id="idade" placeholder='Idade'/>
+					<br>
+                </div>
+				
+				<div class="">
+                    <label for="sexo" class="form-check-label">Sexo:</label>
+                    <input class='form-control' type="text" id="sexo" placeholder='Sexo'/>
+					<br>
+                </div>
+            
+			</form>
+			<br>
+			<button class="btn btn-primary" id="btn-salvar">SALVAR</button>
+				
+            <button class="btn btn-primary" onclick="deletar()" >DELETAR</button>
+			<br><br>
+            
+			<table id="tabela" class="table">
+                <thead class='thead-dark'>
+                    <th scope='col'>Nome</th>
+                    <th scope='col'>Idade</th>
+					<th scope='col'>Sexo</th>
+                </thead>
+                <tbody id="tb_registro">
+                
+                </tbody>
+            </table>
+		</div>
+	
+
+</body>
+</html>
